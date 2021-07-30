@@ -2,7 +2,7 @@
 
 This project works on thread synchronization in Unix using POSIX thread (pthread) library. 
  
-Part 1 [50 points]: Synchronize d ≤ m threads so they can shift an m x m matrix concurrently. 
+Part 1: Synchronize d ≤ m threads so they can shift an m x m matrix concurrently. 
 Program will repeat the following shifts s many times: first perform a circular shift from left to right, 
 then a circular shift from bottom to top. Here is an example with m = 4 and s = 1: 
 
@@ -15,7 +15,7 @@ the current stage until all threads have finished shifting columns in the previo
 Program will read d and s from keyboard, and the input matrix from input.txt file which begins with 
 m and then one row per line. Main thread prints the input matrix as well as the shifted matrix. 
  
-Part 2 [50 points]: Convert the monitor-based solution of the Dining Philosophers problem into 
+Part 2: Convert the monitor-based solution of the Dining Philosophers problem into 
 a new solution without monitors using mutex and condition variables of pthread. As a novelty, 
 require each philosopher to obtain 3 forks to start eating, 2 from left and right and 1 from a box 
 of  separate forks  that  initially  contains  f  =  d  /  3  forks,  where  d  is  the  number  of  philosopher 
